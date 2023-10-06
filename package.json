@@ -1,0 +1,12 @@
+{
+  "scripts": {
+    "convert": "./node_modules/.bin/docsify-pdf-converter"
+  },
+  "dependencies": {
+    "puppeteer": "^21.3.6"
+  },
+  "devDependencies": {
+    "docsify-pdf-converter": "^2.0.7",
+    "docsify-to-pdf": "^0.0.5"
+  }
+}
