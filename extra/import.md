@@ -30,4 +30,6 @@ C程序设计语言（第2版·新版）
 
 <https://zh.wikipedia.org/zh-hans/%E7%B5%82%E7%AB%AF>
 
+<https://www.zhihu.com/question/20750344>
+
 <div style="page-break-after:always"></div>

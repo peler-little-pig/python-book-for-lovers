@@ -10,6 +10,8 @@
 ---
 
 * [HelloWorld](./study/HelloWorld.md)
+* [获得输入](./study/get_input.md)
+* [DEBUG及类型转换](./study/DEBUG_and_type.md)
 
 ---
 
