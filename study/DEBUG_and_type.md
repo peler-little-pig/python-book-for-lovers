@@ -76,15 +76,95 @@ print(a+b)
 
 ## BUGs
 
+在这里我会先列出来一些代码以及他们产生的 BUG，然后进行分析。
+
 ### int()转换错误
+
+运行之前有问题的代码之后，连续敲两下空格，你就会发现 Python 报出了错误：
+```
+Traceback (most recent call last):
+  File "D:\PycharmProjects\pythonProject\test.py", line 1, in <module>
+    a = int(input())
+ValueError: invalid literal for int() with base 10: ''
+
+Process finished with exit code 1
+```
 
 ### 变量未定义
 
+代码：
+
+```python
+print(a)
+```
+
+报错：
+
+```
+Traceback (most recent call last):
+  File "D:\PycharmProjects\pythonProject\test.py", line 1, in <module>
+    print(a)
+NameError: name 'a' is not defined
+
+Process finished with exit code 1
+```
+
 ### 类型错误
+
+代码：
+
+```python
+print("abc"*3.0)
+```
+
+报错：
+
+```
+Traceback (most recent call last):
+  File "D:\PycharmProjects\pythonProject\test.py", line 1, in <module>
+    print("abc"*3.0)
+TypeError: can't multiply sequence by non-int of type 'float'
+
+Process finished with exit code 1
+```
 
 ### 语法错误
 
+代码：
+
+```python
+print("Helloworld)
+```
+
+报错：
+
+```
+  File "D:\PycharmProjects\pythonProject\test.py", line 1
+    print("Helloworld)
+                      ^
+SyntaxError: EOL while scanning string literal
+
+Process finished with exit code 1
+```
+
 ### 变量名错误
+
+代码：
+
+```python
+123a = 456
+```
+
+报错：
+
+```
+  File "D:\PycharmProjects\pythonProject\test.py", line 1
+    123a = 456
+       ^
+SyntaxError: invalid syntax
+
+Process finished with exit code 1
+```
 
 ## DEBUG
 
@@ -172,3 +252,5 @@ print(a+b)
 - 很多人也许只会给一个笼统的回答，这时可以用礼貌的语言追问。
 - 不要吝啬你的赞美，尽情感谢帮助你的人，这样下次提问会容易很多。
 - 如果有人帮助你解答后给你发广告，要小心了，他在利用你的感激之情！
+
+<div style="page-break-after:always"></div>
